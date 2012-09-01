@@ -1,0 +1,118 @@
+/*
+Randall Mathews
+MIU 1209
+Week 1 Project 1
+08/30/2012
+*/
+
+
+
+body{
+ background-color: #346699;
+}
+
+h1{
+color: #000;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+margin: 20px;
+padding: 10px;
+background-color: #A7A582;
+}
+
+h2{
+line-height: 25px;
+font-weight: bold;
+font-size: 18px;
+font-family: "Times New Roman";
+}
+
+p{
+color: black;
+word-wrap: normal;
+font-family: "Times New Roman";
+font-size: 18px;
+margin: 20px;
+padding-left: 40px;
+}
+
+li{
+display: block;
+background-color: #27507a;
+line-height: 20px;
+border-radius: 20px;
+margin: 5px;
+font-family: "Times New Roman";
+}
+
+fieldset{
+word-wrap: normal;
+background-color: #27507a;
+color: white;
+text-shadow: -2px 2px -1px rgba(0,0,0,0.5);
+}
+
+nav{
+background-color: #6b6b6b;
+color: #0200ff;
+padding: 10px;
+margin: 10px;
+border-color: black;
+border-style: solid;
+}
+
+input[type = submit]{
+font-weight: bold;
+font-size: 16px;
+background-color: #6b6b6b;
+color: white;
+}
+
+input {
+background-image: -webkit-linear-gradient(top, #FFF 10%, #6b6b6b 90%);
+border-radius: 8px;
+box-shadow: 1px 1px #6b6b6b;
+}
+
+h1 {
+background-image: -webkit-linear-gradient(top, lightgrey 10%, grey 50%);
+font-size:40px;
+font-family:"Times New Roman";
+text-align:center;
+text-shadow:1px 1px #C0C0C0;
+margin-bottom:-1px;
+outline:2px solid black;
+letter-spacing:0.1cm;
+padding:10px;
+}
+
+nav {
+background-image: -webkit-linear-gradient(top, lightgrey 10%, grey 50%);
+font-size:20px;
+font-family:"Times New Roman";
+text-align:center;
+text-shadow:1px 1px #C0C0C0;
+margin-bottom:-1px;
+outline:1px solid black;
+letter-spacing:0.1cm;
+padding:10px;
+}
+
+#errors { 
+	color: #ff4444;
+	text-shadow: -2px 1px 1px color:black;
+} 
+
+
+#submit {
+	color: #white;
+	text-shadow: -2px -1px 1px rgba(0,0,0,0.5);
+}
+
+
+.fieldset1 {
+text-align: left;
+padding-bottom: 5px;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <!--
+Randall Mathews
+MIU 1209
+Week 1 Project 1
+08/30/2012
+-->
+
+<html>
+	<head>
+		<!-- Meta Tags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta type="charset" content = "utf-8" />
+		<meta type="keywords" content = "patient infomation, medical, patient history, emergency" />
+		<meta type="description" content="Patient Information App" />
+		<meta type="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta name="MobileOptimized" content="320"/> 
+		<link href="css/styles.css" rel="stylesheet" />
+		<title>Patient Information</title>
+	</head>
+		<!-- Body Content -->
+	<body>
+			<fieldset>
+				Search by Patient Info: <input type="search" id="search" name="search" placeholder="Enter Patient" />
+				<input  value="Search" id="search" type="button" />
+			</fieldset></br>			
+			<a href="index.html"><img  src="img/imglogo1.png" title="logo" class="logo"/></a></br></br>
+			<form action="#" method="post" id= "patientForm">
+			<fieldset id="fieldId">
+					<legend><strong>Patient Information</strong></legend>
+					<ul id= "errors"></ul>
+					<h4>Add a patient with all pertinent information available.</h4>
+					<ul>
+						<li id="select"><label for="sextype">Sex Type:</label></li></br>
+						<li><label for="patientFirst">First Name:</label><input type="text" id="patientFirst"  /></li></br>
+						<li><label for="patientLast">Last Name:</label><input type="text" id="patientLast" /></li></br>
+						<li><label for="patientAge">Age of Patient:</label><input type="number" min="0" max="120"  id="patientAge" size="10" /></li></br>
+						<li><label for="patientDate">Date Added:</label><input type="date" id="patientDate" size="13" /></li></br>
+					</ul>	
+			</fieldset></br>
+			<fieldset>
+						<legend><strong>Additional Information</strong></legend></li>
+					<ul>	
+						<li><label for="drugAllergies">Drug Allergies:</label><input type="text" id="drugAllergies" /></br>
+						<input type="checkbox"  id="unknown"  value="yes" /><label for="unknown">Unknown Allergies</label></li></br>
+						<li><label for="curMeds">Current Meds:</label><input type="text" id="curMeds" /></li></br>
+						<li><label for="doseMg">Dose in MG:</label></br><input type="range" min="0" max="100" value= "0" step="1" onchange="showValue(this.value)" id="doseMg" />
+							<span id="range">0</span></li>
+								<script type="text/javascript">
+								function showValue(newValue){
+									document.getElementById("range").innerHTML=newValue;}
+								</script>																								
+						<li><label for="comments">Comments:</label></br><textarea id="comments" placeholder="Enter Comments Here"></textarea></li>
+					</ul>
+			</fieldset></br>
+			<input class="submit" type="submit" value="Submit Patient" id="submit" />
+		</form>
+				<nav>
+					<a href="#" id="clear">Clear stored data</a></br>
+					<a href="#" id="display">Display data</a>
+					<a href="additem.html" id="addNew" style="display:none;">Add New Patient</a>
+				</nav></br>
+				<fieldset>
+				<legend>Browse By Type</legend>
+					<a href="#"><img src="img/malebutton.png" title="Male" class="male"/></a></br>
+					<a href="#"><img src="img/femalebutton.png" title="Female" class="female"/></a></br>
+					<a href="#"><img src="img/unknownbutton.png" title="Unknown" class="unknown"/></a></br>
+					<a href="#"><img src="img/alienbutton.png" title="Alien" class="alien"/></a></br>
+				</fieldset>
+			<script src="js/json.js" type="text/javascript"></script>	
+			<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

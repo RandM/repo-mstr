@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ <!--
+Randall Mathews
+VFW 1208
+Week 1 Project 1
+08/02/2012
+-->
+
+<html lang="en">
+<!-- Header Content -->
+<head>
+	<!-- Document Title -->
+	<title>Patient Information; Add Patient</title>
+	<!-- Meta Tags -->
+	<meta type="charset" content = "utf-8" />
+	<meta type="robots" content="index, follow" />
+	<meta type="viewport" content="user-scalable=no, width=device-width" />
+	<meta type="description" content="Patient Information App" />
+	<meta type="keywords" content = "patient infomation, medical, patient history, emergency" />
+</head>
+		<!-- Body Content -->
+		<body>
+			<header>
+			<h1><a href="index.html">Patient Information</a></h1>
+			<h2>Add Patient</h2>
+			</header>
+			<!-- Form Content -->
+			<form action="additem.html" method="post">			
+				<form action="#" method="post">
+					<fieldset>
+							<legend><strong>Patient Information</strong></legend></br>
+							<label for="Patient Sex"> <strong>Patient Sex:</strong></label></br>
+								<select id="Patient Sex">
+									<option value="Male"> Male </option>
+									<option value="Female"> Female </option>
+									<option value="Unknown"> Unknown </option>
+									<option value="Alien"> Alien </option>
+								</select></br></br>
+							<label for="Patient first"> <strong>First Name:</strong> </label><input type="text" id="Patient first"  /></br></br>
+							<label for="Patient last"> <strong>Last Name:</strong> </label><input type="text" id="Patient last" /></br></br>
+							<label for="Patient age"> <strong>Age of Patient:</strong> </label><input type="number" min="0" max="120"  id="Patient age" size= "10" /></br></br>
+							<label for="Patient date"> <strong>Date Added:</strong> </label><input type="date" id="Patient date" size= "13" /></br></br>
+					</fieldset></br>
+					<fieldset>
+							<legend><strong>Additional Information</strong></legend></br>
+							<label for="Meds"><strong>Drug Allergies:</strong> </label><input type="Meds" id="Meds" for="n/a"> <strong>N/A</strong></label><input type="checkbox" id="n/a" /></br></br>
+							<label for="CurMeds"><strong>Current Meds:</strong> </label><input type="CurMeds" id="CurMeds" /></br></br>
+							<label for="Dose in MG."> <strong>Dose in MG:</strong> </label></br><input type="range" min="0" max="100" value= "1" step="1" onchange="showValue(this.value)" id="Dose in MG"/></br></br>
+							<input type="hidden" value="true" />		
+							<input type="hidden" value="true" />				
+							<label for="comments"> <strong>Comments:</strong> </label></br><textarea id="comments" placeholder="Enter Comments Here"></textarea></br></br>
+							<input type="hidden" value="true" />		
+				</fieldset></br>
+			<input type="submit" value="Add Patient" /></br></br>
+				<nav>
+						<a href="#">Clear Stored Data</a></br>
+						<a href="#">Display Data</a>
+				</nav>		
+			</form>	
+		</body>
+</html>
