@@ -2,8 +2,9 @@
  <!--
 Randall Mathews
 MIU 1209
-Week 2 Project 2
-09/06/2012
+Week 3 Project 3
+09/13/2012
+Bronze
 -->
 
 
@@ -32,66 +33,246 @@ Week 2 Project 2
 </head>
 <body>
 
+	<!--page-->
+	
 	<div data-role="page">
 		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>Patient Info</h1>
 		</div>
 		<div data-role="content">
-			<p><a href="#two"><img src="img/imglogo.png"></a></p>
+			<p><a href="http:/randm.github.com/mysite/Bronze/additem.html" data-ajax="false"> <img id="logo" src="img/imglogo.png"></a></p>
 		</div>
 		
+	<div data-role="content">
+		<ul data-role="listview" data-dividertheme="b" data-inset="true" data-filter="true">
+			  <li data-role="list-divider">BROWSE BY GENDER</li>
+			  <li><a href="#two">MALE</a></li>
+			  <li><a href="#three">FEMALE</a></li>
+			  <li><a href="#four">UNKNOWN</a></li>
+			  <li><a href="#five">ALIEN</a></li>
+		</ul>
+	</div>
+	
 		
-			<div data-role="content" data-theme="b">
-     <ul data-role="listview" id="oneWindowList" data-inset="true" data-filter="true">
-	     <li data-role="list-divider" data-backbtn="true"><h1>Browse by Genre</h1></li>
-	     <li data-role="collapsible" data-collapsed="true"><h2>Male</h2><p>Under Constuction</p></li>
-	     <li data-role="collapsible" data-collapsed="true"><h2>Female</h2><p>Under Constuction</p></li>
-	     <li data-role="collapsible" data-collapsed="true"><h2>Unknown</h2><p>Under Constuction</p></li>
-		 <li data-role="collapsible" data-collapsed="true"><h2>Alien</h2><p>Under Constuction</p></li>
-     </ul>
-    
-	
-	
 	<div data-role="footer" data-position="fixed" data-theme="b">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#links" data-icon="links">Links</a></li>
-				<li><a href="#search" data-icon="search">Search</a></li>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="/Users/halfdeth/Desktop/repo-mstr/MIU/Week 2/Gold/index.html/" data-icon="star" data-theme="e">Gold</a></li>
+			    <li><a href="home">Home</a></li>
+				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
+				<li><a href="http://touch.krqe.com/">News</a></li>
+				<li><a href="http:/randm.github.com/mysite/Gold/index.html" data-theme="e">Gold</a></li>
 			</ul>
 		</div>
 	</div>		
-	</div>	
-	</div>	
 		
-	
-	<div data-role="page" id="two" data-add-back-btn="false">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Patient List</h1>
-		</div>
-		
-		
-	<div class="ui-grid-c">
-		<div class="ui-block-a"><a href="#"><img src="img\maleblue.png"></a></div>
-		<div class="ui-block-b"><a href="#"><img src="img\femaleblue.png"></a></div>
-		<div class="ui-block-c"><a href="#"><img src="img\unknownblue.png"></a></div>
-		<div class="ui-block-c"><a href="#"><img src="img\alienblue.png"></a></div>
 	</div>
-		
-		
-	<div data-role="footer" data-position="fixed" data-theme="b">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#links" data-icon="links">Links</a></li>
-				<li><a href="#search" data-icon="search">Search</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="/Users/halfdeth/Desktop/repo-mstr/MIU/Week 2/Gold/index.html/" data-icon="star" data-theme="e">Gold</a></li>
+
+<!--page-->	
+	
+	<div data-role="page" id="two" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Male Patient List</h1>
+		</div>
+	
+	 
+	<div data-role="collapsible">
+   		<h3>Male Patients A - M</h3>	
+   			<ul data-role="listview" data-filter="true">
+   				<li>
+					<img src="img\maleblue.png">
+					<h3>Ricky Bobby</h3>
+					<p>Age: 42</p>
+					<p>Drug Allergies: Hot Beer</p>
+				</li>
+				<li>
+					<img src="img\maleblue.png">
+					<h3>Clay Pinkerton</h3>
+					<p>Age: 53</p>
+					<p>Drug Allergies: None</p>
+				</li>
+				<li>
+					<img src="img\maleblue.png">
+					<h3>John Clark</h3>
+					<p>Age: 35</p>
+					<p>Drug Allergies: None</p>
+				</li>
+				<li>
+					<img src="img\maleblue.png">
+					<h3>Scott Hanes</h3>
+					<p>Age: 52</p>
+					<p>Drug Allergies: None</p>
+				</li>
 			</ul>
 		</div>
-	</div>
+
+		<div data-role="collapsible">
+   		<h3>Male Patients N - Z</h3>	
+   			<ul data-role="listview" data-filter="true">
+   				<li>
+					<img src="img\maleblue.png">
+					<h3>Ricky Bobby</h3>
+					<p>Age: 42</p>
+					<p>Drug Allergies: Hot Beer</p>
+				</li>
+				<li>
+					<img src="img\maleblue.png">
+					<h3>Clay Pinkerton</h3>
+					<p>Age: 53</p>
+					<p>Drug Allergies: None</p>
+				</li>
+				<li>
+					<img src="img\maleblue.png">
+					<h3>John Clark</h3>
+					<p>Age: 35</p>
+					<p>Drug Allergies: None</p>
+				</li>
+				<li>
+					<img src="img\maleblue.png">
+					<h3>Scott Hanes</h3>
+					<p>Age: 52</p>
+					<p>Drug Allergies: None</p>
+				</li>
+			</ul>
+		</div>
+
+			
+		<div data-role="footer" data-position="fixed"   data-theme="b">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
+						<li><a href="http://touch.krqe.com/">News</a></li>
+						<li><a href="http:/randm.github.com/mysite/Gold/index.html" data-theme="e">Gold</a></li>
+					</ul>
+		</div>		
 	</div>
 	
+	</div>
+
+
+<!--page-->
+
+
+<div data-role="page" id="three" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Female Patient List</h1>
+		</div>
+
+<div data-role="collapsible">
+   	<h3>Female Patients A - M</h3>	
+   			<ul data-role="listview" data-filter="true">				
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>Betty Bently</h3>
+					<p>Age: 54</p>
+					<p>Drug Allergies: None</p>
+				</li>
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>Cindy Scott</h3>
+					<p>Age: 25</p>
+					<p>Drug Allergies: Penicillin</p>
+				</li>
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>June Cleaver</h3>
+					<p>Age: 75</p>
+					<p>Drug Allergies: Morphine</p>
+				</li>
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>Irene Mathers</h3>
+					<p>Age: 47</p>
+					<p>Drug Allergies: None</p>
+				</li>
+			</ul>
+		</div>
+
+
+<div data-role="collapsible">
+   	<h3>Female Patients N - Z</h3>	
+   			<ul data-role="listview" data-filter="true">				
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>Betty Bently</h3>
+					<p>Age: 54</p>
+					<p>Drug Allergies: None</p>
+				</li>
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>Cindy Scott</h3>
+					<p>Age: 25</p>
+					<p>Drug Allergies: Penicillin</p>
+				</li>
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>June Cleaver</h3>
+					<p>Age: 75</p>
+					<p>Drug Allergies: Morphine</p>
+				</li>
+				<li>
+					<img src="img\femaleblue.png">
+					<h3>Irene Mathers</h3>
+					<p>Age: 47</p>
+					<p>Drug Allergies: None</p>
+				</li>
+			</ul>
+		</div>
+
+
+			
+	<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
+					<li><a href="http://touch.krqe.com/">News</a></li>
+					<li><a href="http:/randm.github.com/mysite/Gold/index.html" data-theme="e">Gold</a></li>
+				</ul>
+			</div>		
+	</div>
+	
+	</div>	
+
+<!--page-->
+
+	<div data-role="page" id="additem" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed" data-theme="b">
+	      	<h1>Add Patient</h1>
+		</div>
+
+</div>
+
+<!--
+		<div data-role="fieldcontain">
+			<label for="sex type">Select Gender:</label>
+			<select name="sex type" id="sexType" data-native-menu="true">	
+			<option data-placeholder="true" ajax->Please Choose One</option>	
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="unknown">Unknown</option>
+				<option value="alien">Alien</option>
+			</select>
+		</div>
+
+			<div data-role="content">
+				<form action="" method="post" id="addPatientForm">		
+				<div data-role="fieldcontain">
+					<label for="fName">First Name:</label>
+					<option data-placeholder="true"></option>
+					<input type="text" name="fName" id="fName">
+					<p>Please enter your first name</p>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName">
+					<p>Please enter your last name</p>
+				</div>
+				</form>	
+			</div>
+	</div>	
+	-->
 	
 
 	<!-- JavaScript under here -->

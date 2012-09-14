@@ -40,15 +40,15 @@ window.addEventListener("DOMContentLoaded", function(){
 }
 			getCheckboxValue();
 			var item 							= {};
-				item.sextype 				= ["Sex Type:" , $('sexTypes').value];
+				item.sextype 				= ["Gender:" , $('sexTypes').value];
 				item.patientFirst 			= ["First Name:" , $('patientFirst').value];
 				item.patientLast 			= ["Last Name:" , $('patientLast').value];
 				item.patientAge 			= ["Age of Patient:" , $('patientAge').value];
 				item.patientDate 			= ["Date Added:" , $('patientDate').value];
 				item.drugAllergies 			= ["Drug Allergies:" , $('drugAllergies').value];
-				item.allergy 					= ["Unknown Allergies:" , allergyValue];
+				item.allergy 				= ["Unknown Allergies:" , allergyValue];
 				item.curMeds 				= ["Current Meds:" , $('curMeds').value];
-				item.doseMg 					= ["Dose in MG:" , $('doseMg').value];
+				item.doseMg 				= ["Dose in MG:" , $('doseMg').value];
 				item.comments 				= ["Comments:" , $('comments').value];
 
 			localStorage.setItem( id, JSON.stringify(item));
@@ -149,7 +149,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				$('patientFirst').value			= item.patientFirst[1];
 				$('patientLast').value 			= item.patientLast[1];
 				$('patientAge').value 			= item.patientAge[1];
-				$('patientDate').value 		= item.patientDate[1];
+				$('patientDate').value 			= item.patientDate[1];
 				$('drugAllergies').value 		= item.drugAllergies[1];			
 				$('curMeds').value 				= item.curMeds[1];
 				$('doseMg').value 				= item.doseMg[1];
@@ -169,16 +169,15 @@ window.addEventListener("DOMContentLoaded", function(){
 				var getPatientFirst = $('patientFirst');
 				var getPatientLast = $('patientLast');
 				var getDrugAllergies = $('drugAllergies');
-				
 				errMsg.innerHTML = "";
 				getSexType.style.border = "1px solid black";
 				getPatientFirst.style.border = "1px solid black";
 				getPatientLast.style.border = "1px solid black";
 				getDrugAllergies.style.border = "1px solid black";
-				
+				alert("Please Enter Required Fields");
 				var messageAry = [];
-					if(getSexType.value === "<-Select Sex->"){
-						var  sexTypeError = "Please Enter Genre";
+					if(getSexType.value === "<-Select Gender->"){
+						var  sexTypeError = "Please Enter Gender";
 						getSexType.style.border = "1px solid red";
 						messageAry.push(sexTypeError);
 	}
@@ -204,11 +203,11 @@ window.addEventListener("DOMContentLoaded", function(){
 							txt.innerHTML = messageAry[i];
 							errMsg.appendChild(txt);
 	}
-	
+					
 					e.preventDefault();
 					return false;
 			}else{
-					storeData(this.key);
+					storeData(this.key);				
 			}
 }
 
@@ -259,7 +258,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 }
 
-				var sexTypes = [ "<-Select Sex->", "Male", "Female", "Unknown", "Alien" ];
+				var sexTypes = [ "<-Select Gender->", "Male", "Female", "Unknown", "Alien" ];
 				makeSexTypes();
 				errMsg = $('errors');
 				

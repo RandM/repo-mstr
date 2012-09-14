@@ -3,7 +3,7 @@ Randall Mathews
 MIU 1209
 Week 3 Project 3
 09/13/2012
-Gold
+Bronze
 */
 
 //Wait until DOM is ready.
@@ -197,13 +197,15 @@ window.addEventListener("DOMContentLoaded", function(){
 							var  drugAllergiesError = "Please Enter Drug Allergies";
 							drugAllergies.style.border = "1px solid red";
 							messageAry.push(drugAllergiesError);
+							
 							alert("Please Fill Out All Required Fields");
 }
 					if(messageAry.length >= 1) {
 						for(var i = 0,  j = messageAry.length;  i < j;  i++){
 							var txt = document.createElement('li');
 							txt.innerHTML = messageAry[i];
-							errMsg.appendChild(txt);						
+							errMsg.appendChild(txt);
+													
 }
 	
 					e.preventDefault();
