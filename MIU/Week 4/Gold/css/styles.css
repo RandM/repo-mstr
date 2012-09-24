@@ -22,15 +22,27 @@ Gold
 	margin: -20px 0px 0px 0px;
 }
 
+h3 {
+	color: black;
+}
+
+p {
+	color: #3f3e44;
+}
+
 #logo {
 	margin: 40px 0px 20px 0px;
+}
+
+.ui-body-a {
+	background: #353335;
 }
 
 .ui-body-c {
 	color: white;
 	font-weight: 400;
 	background-color: #353335;
-	border-color: black;
+	border-color: black
 }
 
 .ui-content {
@@ -39,6 +51,7 @@ Gold
 	text-shadow: 1px 2px 2px white;
 	
 }
+
 
 label.error {
 	display:block;
@@ -57,6 +70,17 @@ label.error {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
+
+.ui-li-desc {
+	font-size: 12px;
+	font-weight: normal;
+	display: block;
+	margin: -.5em 0 .6em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 
 
 

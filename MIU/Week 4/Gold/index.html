@@ -38,7 +38,7 @@ Gold
 	
 	 	<div data-role="page" style="background: url('img/bokehbg1.jpg')">
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<p><a href="home" data-ajax="false"> <img id="head" src="img/ptlogo7.png"></a></p>
+			<p><a href="home" data-ajax="false"><img id="head" src="img/ptlogo7.png"></a></p>
 		</div>
 			
 		
@@ -47,7 +47,7 @@ Gold
 		</div>
 		
 	<div data-role="content">
-		<ul data-role="listview" data-dividertheme="a" data-inset="true" data-filter="true">
+		<ul data-role="listview" data-dividertheme="a" data-inset="true" data-filter="true" data-theme="a">
 			  <li data-role="list-divider">BROWSE BY GENDER</li>
 			  <li><a href="#two">MALE</a></li>
 			  <li><a href="#three">FEMALE</a></li>
@@ -73,8 +73,8 @@ Gold
 
 <!--page-->	
 	
-	<div data-role="page" id="two" data-add-back-btn="true">
-		<p><a href="index.html"> <img id="head2" src="img/ptlogo7.png"></a></p></br>
+	<div data-role="page" id="two" data-add-back-btn="true" data-position="fixed">
+		<p><a href="index.html" data-ajax="false"><img id="head" src="img/ptlogo7.png"></a></p></br>
 
 	
 	 
@@ -158,7 +158,7 @@ Gold
 
 
 	<div data-role="page" id="three" data-add-back-btn="true">	
-		<p><a href="index.html"> <img id="head" src="img/ptlogo7.png"></a></p></br>
+		<p><a href="index.html"><img id="head" src="img/ptlogo7.png"></a></p></br>
 		
 
 	<div data-role="collapsible">
@@ -192,35 +192,54 @@ Gold
 		</div>
 
 
-<div data-role="collapsible">
-   	<h3>Female Patients N - Z</h3>	
-   			<ul data-role="listview" data-filter="true">				
+	<div data-role="collapsible">
+	   	<h3>Female Patients N - Z</h3>
+	   		<ul data-role="listview" data-inset="true">
+   			<div class="ui-grid-a"  data-filter="true">
+   				<div class="ui-block-a" data-role="listview" data-inset="true">				
 				<li>
-					<img src="img\femaleblue.png">
 					<h3>Betty Bently</h3>
 					<p>Age: 54</p>
 					<p>Drug Allergies: None</p>
 				</li>
 				<li>
-					<img src="img\femaleblue.png">
 					<h3>Cindy Scott</h3>
 					<p>Age: 25</p>
 					<p>Drug Allergies: Penicillin</p>
 				</li>
+			</div>
+				<div class="ui-block-b" data-role="listview" data-inset="true">	
 				<li>
-					<img src="img\femaleblue.png">
 					<h3>June Cleaver</h3>
 					<p>Age: 75</p>
 					<p>Drug Allergies: Morphine</p>
 				</li>
 				<li>
-					<img src="img\femaleblue.png">
 					<h3>Irene Mathers</h3>
 					<p>Age: 47</p>
 					<p>Drug Allergies: None</p>
 				</li>
+			</div>
+				<div class="ui-block-a" data-role="listview" data-inset="true">
+				<li>
+					<img src="img\maleblue.png">	
+				</li>
+				<li>
+					<img src="img\femaleblue.png">	
+				</li>
+			</div>
+				<div class="ui-block-b" data-role="listview" data-inset="true">
+				<li>	
+					<img src="img\unknownblue.png">		
+				</li>
+				<li>	
+					<img src="img\alienblue.png">
+				</li>
+			</div>	
 			</ul>
 		</div>
+		</div>
+
 
 
 			
@@ -241,7 +260,7 @@ Gold
 <!--page-->
 
 	<div data-role="page" id="addPatient" data-add-back-btn="true" style="background: url('img/bokehbg1.jpg')">
-		<p><a href="index.html"> <img id="head1" src="img/ptlogo7.png"></a></p></br></br>
+		<p><a href="index.html"> <img id="head" src="img/ptlogo7.png"></a></p></br></br>
 
 
 		<div data-role="fieldcontain">
@@ -284,8 +303,8 @@ Gold
 				<label for="allergies">Drug Alergies:</label>
 				<option data-placeholder="true"></option>
 				<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies" class="required">	
-					<input type="checkbox" name="checkbox" id="checkbox" class="custom" checked="checked" data-theme="a">
-					<input type="checkbox" name="checkbox" id="checkbox1" class="custom" data-theme="a">
+					<input type="checkbox" name="noallergy" id="checkbox" class="custom" checked="checked" data-theme="a">
+					<input type="checkbox" name="unknownallergy" id="checkbox1" class="custom" data-theme="a">
 					<label for="checkbox">No Drug Allergies</label>
 					<label for="checkbox1">Unknown Drug Allergies</label>
 				</fieldset>
@@ -297,12 +316,12 @@ Gold
 				<option data-placeholder="true"></option>
 				<input type="text" name="currentmeds" id="currentmeds" placeholder="Please Enter Current Medication"></br>
 				<label for="slider-mini">Dosage in MG:</label>
-				<input type="range" name="slider-mini" id="slider-mini" value="300" min="0" max="1000" data-highlight="true" data-theme="a">	
+				<input type="range" name="dosage" id="slider-mini" value="300" min="0" max="1000" data-highlight="true" data-theme="a">	
 			</div>
 
 			<div data-role="fieldcontain">
 				<label for="comments">Comments:</label>
-				<textarea name="textarea" id="textarea" placeholder="Additional Comments Here"></textarea>		
+				<textarea name="comments" id="textarea" placeholder="Additional Comments Here"></textarea>		
 			</div>	
 			
 			<div>	
@@ -322,16 +341,17 @@ Gold
 			</div>		
 			</form>
 		</div>
-	</div>
+	</div>	
 
-	
+
+
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/json.js"></script>	
-	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/main2.js" ></script>
 
 </body>
 </html>
