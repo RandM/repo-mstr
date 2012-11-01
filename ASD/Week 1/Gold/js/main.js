@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		
 
-
+		//display data in local storage
 		function getData(){
 		toggleControls( "on" );
 			if( localStorage.length === 0 ){
