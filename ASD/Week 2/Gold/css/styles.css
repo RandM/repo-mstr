@@ -1,9 +1,8 @@
 /*
 Randall Mathews
-MIU 1209
-Week 4 Project 4
-09/20/2012
-Gold
+ASD 1210
+Week 2 Project 2
+11/01/2012
 */
 
 
@@ -26,8 +25,13 @@ h3 {
 	color: black;
 }
 
+h2 {
+	color: yellow;
+	margin: 20px 0px 0px 75px;
+}
+
 p {
-	color: #3f3e44;
+	color: #2db45a;
 }
 
 #logo {
@@ -39,16 +43,16 @@ p {
 }
 
 .ui-body-c {
-	color: white;
-	font-weight: 400;
+	color: yellow;
+	font-weight: 350;
 	background-color: #353335;
-	border-color: black
+	border-color: black;
 }
 
 .ui-content {
 	color: black;
 	font-weight: bolder;
-	text-shadow: 1px 2px 2px white;
+	text-shadow: 1px 2px 2px black;
 	
 }
 

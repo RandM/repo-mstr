@@ -2,8 +2,8 @@
  <!--
 Randall Mathews
 ASD 1210
-Week 1 Project 1
-10/25/2012
+Week 2 Project 2
+11/01/2012
 -->
 
 
@@ -35,9 +35,9 @@ Week 1 Project 1
 
 <!--page-->
 	
-	 	<div data-role="page" style="background: url('img/bokehbg1.jpg')">
+	 	<div data-role="page" id="one" style="background: url('img/bokehbg1.jpg')">
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<p><a href="home" data-ajax="false"><img id="head" src="img/ptlogo7.png"></a></p>
+			<p><a href="index" data-ajax="false"><img id="head" src="img/ptlogo7.png"></a></p>
 		</div>
 			
 		
@@ -63,7 +63,7 @@ Week 1 Project 1
 				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/ASD/">Links</a></li>
 				<li><a href="http://touch.krqe.com/" id="news ">News</a></li>
 				<li><a href="http://m.webmd.com/mobile-drugs/" id="meds ">Meds</a></li>
-				<li><a href="#six"><data-theme="a">More</a></li>
+				<li><a href="#five"><data-theme="a">More</a></li>
 			</ul>
 		</div>
 	</div>		
@@ -334,7 +334,7 @@ Week 1 Project 1
 						<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/ASD/">Links</a></li>
 						<li><a href="http://touch.krqe.com/">News</a></li>
 						<li><a href="http://m.webmd.com/mobile-drugs/" id="meds ">Meds</a></li>
-						<li><a href="#six"><data-theme="a">More</a></li>
+						<li><a href="#five"><data-theme="a">More</a></li>
 					</ul>
 				</div>		
 			</div>		
@@ -344,19 +344,30 @@ Week 1 Project 1
 
 <!--page-->
 
-	<div data-role="page" id="six" data-add-back-btn="true" data-position="fixed">
+	<div data-role="page" id="five" data-add-back-btn="true" data-position="fixed">
 		<p><a href="index.html" data-ajax="false"><img id="head" src="img/ptlogo7.png"></a></p></br></br>
 		<input type="submit" value="Display Stored Data" data-theme="a"></br>
 		<input type="reset" value="Clear Stored Data" data-theme="b"></br>
-		<input type="reset" value="CSV" data-theme="e"></br>
-		<input type="submit" value="JSON" data-theme="e"></br>
-		<input type="submit" value="XML" data-theme="e"></br>
-	</div>
+		
+		<div data-role="content">
+			<a data-role="button" id="JBtn" data-theme="a">JSON</a>
+			<a data-role="button" id="XBtn" data-theme="a">XML</a>
+			<a data-role="button" id="CBtn" data-theme="a">CSV</a>
+			
+		<h2>Data Results</h2>
+			<hr>
+	        <p id="dataIn"></p>
+	        <hr>
+	        <ul id="dataOut"></ul>
+
+        </div>
+    </div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.csv-0.65pre.min.js"></script>
 	<script type="text/javascript" src="js/json.js"></script>	
 	<script type="text/javascript" src="js/main2.js" ></script>
 
