@@ -127,11 +127,11 @@ $("#CBtn").on("click", changeToCSV);
                 p.appendTo(li);
                 
                 var cur = $(this);
-                p.append("patientFirst: " + findString("patientFirst")
-                         + "patientLast: " + findString("patientLast")
-                         + "patientAge: " + findString("patientAge")
-                         + "patientDate: " + findString("patientDate")
-                         + "drugAllergies: " + findString("drugAllergies")
+                p.append("First Name: " + findString("patientFirst")
+                         + "Last Name: " + findString("patientLast")
+                         + "Patient Age: " + findString("patientAge")
+                         + "Patient Date: " + findString("patientDate")
+                         + "Drug Allergies: " + findString("drugAllergies")
                         );
                 
 
@@ -164,10 +164,10 @@ $("#CBtn").on("click", changeToCSV);
             dataOut.html("");
             
             //CSV Lib
-            var chars = $.csv.toArrays(data);
+            var pats = $.csv.toArrays(data);
             
             
-            for (var outer = 1; outer < chars.length; outer++)
+            for (var outer = 1; outer < pats.length; outer++)
             {
                 var li = $("<li></li>");
                 li.appendTo(dataOut);
@@ -175,9 +175,9 @@ $("#CBtn").on("click", changeToCSV);
                 var p = $("<p></p>");
                 p.appendTo(li);
                 
-                for (var inner = 0; inner < chars[0].length; inner++)
+                for (var inner = 0; inner < pats[0].length; inner++)
                 {
-                    p.append(chars[0][inner] + ": " + chars[outer][inner]);
+                    p.append(pats[0][inner] + ": " + pats[outer][inner]);
                     p.append("<br>")
                 }
             }
